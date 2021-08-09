@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Luís Gustavo Cristo</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/LGustavoC">github</a>
+            </li>
+
+            <li>
+                <a target="_blank" href="mailto:gugacristo90@gmail.com">email</a>
+            </li>
+
+            <li>
+                <a target="_blank" href="https://wa.me/83993629739">whatsapp</a>
+            </li>
+
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Guga Cristo</h1>
+                <h5>Full-Stack Developer | Data Scientist</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi, doloribus. Sequi at mollitia qui perspiciatis non omnis deleniti voluptates eaque.
+                    Corporis unde esse sapiente! Repellat nulla recusandae laboriosam unde fugit?
+                </p>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <img src="./img/background.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Explicabo sed vitae adipisci repudiandae, nemo eum et? Quibusdam voluptates,
+                        fuga eaque nulla vel nostrum numquam eum minima blanditiis magnam, pariatur aperiam.</p>
+                </div>
+                <div>
+                    <img src="./img/background.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Explicabo sed vitae adipisci repudiandae, nemo eum et? Quibusdam voluptates,
+                        fuga eaque nulla vel nostrum numquam eum minima blanditiis magnam, pariatur aperiam.</p>
+                </div>
+                <div>
+                    <img src="./img/background.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Explicabo sed vitae adipisci repudiandae, nemo eum et? Quibusdam voluptates,
+                        fuga eaque nulla vel nostrum numquam eum minima blanditiis magnam, pariatur aperiam.</p>
+                </div>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :D">
+                    <button>enviar!</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
